@@ -11,6 +11,7 @@ public class Player extends Entity {
             System.out.println((i + 1) + ": " + cards.get(i).toString());
         }
         System.out.print("Your choice: ");
+        @SuppressWarnings("all")
         Scanner scanner = new Scanner(System.in);
         int cardIndex = scanner.nextInt() - 1;
         return cards.remove(cardIndex);
